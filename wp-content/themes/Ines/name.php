@@ -1,0 +1,1 @@
+<h1 class="entry-title"><?php _e( 'Have nice day', 'Detox' ); ?> <?php echo bp_core_get_userlink( bp_loggedin_user_id() ); ?></h1>

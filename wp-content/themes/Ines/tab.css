@@ -1,0 +1,6 @@
+#logo{display:inline-block;float:left;width:100%;height:195px;background:#1E1E1E;margin:0;padding:0;outline:none;position:relative;overflow:hidden;-webkit-transition: -webkit-transform 1s; -moz-transition: -moz-transform 1s; -o-transition: -o-transform 1s; -ms-transition: -ms-transform 1s; transition: transform 1s;}
+#lhead .item-list-tabs{display:inline-block;font-size:18px;overflow: hidden;margin:0;background:#fafafa;padding:0;text-decoration: none;text-shadow:#fff 0 1px 1px;float:right;margin:0;width:50%;height:92px;}
+#lhead h1.entry-title,#lhead h1.entry-title a{font-size:32px;letter-spacing:-2px;}
+.hc4 h2{font-size:32px;}
+form#whats-new-form,#message,.padder .pagination,.padder .item-list-tabs,.padder .item-list-tabs#subnav,#item-header #item-actions,#item-header-avatar img,#item-header #item-header-content,.hc5,.hc7,.hc8{margin:10px .5% !important;}
+.cimg{width:100%;height:auto;overflow:hidden;margin:10px 0;padding:0;position:relative;display:block;}

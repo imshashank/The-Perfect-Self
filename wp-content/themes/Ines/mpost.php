@@ -1,0 +1,1 @@
+<h2><?php _e( 'Our Members', 'buddypress' ); ?></h2>
