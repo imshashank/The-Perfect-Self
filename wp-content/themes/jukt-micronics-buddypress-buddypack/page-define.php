@@ -39,12 +39,13 @@ $new_post = array(
 'post_author' => $user_ID,
 'post_type' => 'post',
 'post_category' => $array
-);
+);    
+
 $post_id = wp_insert_post($new_post); 
 echo "new definition created for $name</br>";
 
 
-}else echo "definition already exists</br>";
+}else echo "definition already exists for $name</br>";
 
 echo "</div>";						 
     }
