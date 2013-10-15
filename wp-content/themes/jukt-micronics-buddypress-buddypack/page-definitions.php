@@ -24,8 +24,10 @@ echo "<form action='../define/' method='post'>";
 
 foreach ( $categories as $category ) {
 	//echo '<a href="' . get_category_link( $category->term_id ) . '">' . $category->name . '</a><br/>';
+	if ($category->cat_name != 'Uncategorized') {
 	echo "<input type='checkbox' name='check_list[]' value='$category->term_id' />";    echo $category->cat_name;
-    echo '<br>';    
+    echo '<br>';     
+	}
 }
 echo "<input type='submit' /></form>";
 
