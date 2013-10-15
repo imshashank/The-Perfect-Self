@@ -41,6 +41,8 @@ $new_post = array(
 'post_category' => $array
 );    
 
+
+
 $post_id = wp_insert_post($new_post); 
 echo "new definition created for $name</br>";
 
