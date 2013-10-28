@@ -162,7 +162,7 @@ ul#nav {
 	list-style: none;
 	bottom: 0;
         display: block;
-        width: 100%;
+        
         border-bottom: 1px solid #ccc;
 }
 	body.activity-permalink ul#nav { display: none; }
@@ -1496,6 +1496,7 @@ div.post {
 	div.post p.postmetadata {
 		margin-top: 15px;
 		overflow: hidden;
+		display:none;
 	}
 
 div.post em{
@@ -1838,4 +1839,16 @@ body {
 #wp-admin-bar ul li#bp-adminbar-notifications-menu a span {
 	padding: 0 6px;
 	margin-left: 2px;
+}
+
+
+.follow-button{
+margin-top: 18px;
+}
+
+
+.prop-box{
+border: solid black 1px;
+padding: 12px;
+margin-bottom: 11px;
 }
