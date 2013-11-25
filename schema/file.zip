@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <!--[if IE ]>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <![endif]-->
+    <title>MySQL ::  Begin Your Download - mysql-workbench-community-6.0.7-1ubu1204-amd64.deb</title>
+
+    
+    <link rel="stylesheet" media="screen" href="/common/css/mysql.css?v=20121230" />
+    <link rel="stylesheet" media="projection" href="/common/css/mysql.css?v=20121230" />
+    <link rel="stylesheet" media="print" href="/common/css/print.css?v=20111230" />
+
+            <link rel="stylesheet" href="/common/css/network_compare.css" />
+        
+    
+            <meta name="robots" content="noindex,nofollow" />
+    
+    
+            <link rel="shortcut icon" href="/common/themes/sakila/favicon.ico" />
+
+        <script src="/common/js/clear_search_text.js"></script>
+
+    
+                            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+            
+    <script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
+    <!-- The following src attribute is not a typo, it is a protocol-relative URI -->
+    <script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4fc7ca0b3e7d0a70"></script>
+
+    
+</head>
+
+<body class="downloads-community" >
+
+<div id="container">
+
+<!--UdmComment-->
+<a class="skipToContent" href="#mainContent">Skip navigation links</a>
+
+    <div id="header" >
+
+    <div class="left">
+
+    <div id="logo">
+                                            <a href="http://dev.mysql.com/" title="MySQL">
+                            <img src="/common/logos/logo-mysql-110x57.png" alt="MySQL" width="110" height="57" /></a>
+            </div>
+            <div id="tagline">The world's most popular open source database</div>
+
+    </div>
+
+    <div class="right">
+        
+        <div id="search_box"> <!-- Start Search -->
+        		<form id="searchform" name="searchform" method="get" action="http://search.oracle.com/search/search">
+			<input type="text" id="q" name="q" value="Search" class="swap_value" onfocus="clearSearchText();" />
+			<input type="hidden" id="search_dest" name="group" value="All"/>
+			<input type="image" src="/common/themes/sakila/search_g.png" id="go" alt="Search" title="Search" />
+		    </form>        </div> <!-- End Search -->
+
+                <div id="login" >
+                     <p><a href="https://dev.mysql.com/auth/login/?dest=http%3a%2f%2fdev.mysql.com%2Fdownloads%2Fmirror.php%3Fid%3D414356">Login</a> | <a href="https://dev.mysql.com/auth/register/">Register</a></p>
+                </div>
+    </div>
+
+    </div> 
+
+    <!-- MySQL Navigation -->
+    <div id="nav_container">
+
+    <div id="flags">
+        <ul>
+            <li style="position:relative; top:-5px;">
+                <!-- Icons from http://icondock.com/free/vector-social-media-icons //-->
+                <a href="http://www.facebook.com/mysql"><img src="/common/icons/facebook.png" alt="Facebook" title="Join us on Facebook" width="20" height="20" /></a>&nbsp;
+                <a href="https://twitter.com/#!/mysql"><img src="/common/icons/twitter.png" alt="Twitter" title="Follow us on Twitter" width="20" height="20" /></a>&nbsp;
+                <a href="http://www.youtube.com/mysqlchannel"><img src="/common/icons/youtube.png" alt="YouTube" title="Visit our YouTube channel" width="20" height="20" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </li>
+                            <br />
+                        </ul>
+    </div>
+    
+                        <div id="tab_second">
+
+        <ul>
+            <li class="first"><a href="http://dev.mysql.com">Developer Zone</a></li>
+            <li class="current"><a href="http://dev.mysql.com/downloads/">Downloads</a></li>
+            <li><a href="http://dev.mysql.com/doc/">Documentation</a></li>
+        </ul>
+        </div>
+
+                    
+
+
+    <div id="mysql_menu">
+        <ul>
+	<li class="current"><a class="current " href="/downloads/">Current</a>
+	
+		
+		
+	</li>
+	
+	<li class="link last"><a  href="http://downloads.mysql.com/archives.php">Archives</a>
+	
+		
+		
+	</li>
+	
+</ul>
+    </div>
+
+        <div id="og_sakila">&nbsp;</div>
+            <div id="og_title">&nbsp;</div>
+
+    </div>
+    <!-- End Navigation Container -->
+
+<!--/UdmComment-->
+
+<div class="page_container">
+
+    
+     <div class="page_sidebar">
+
+        <!--UdmComment-->
+
+        <div id="menu_title">
+                &nbsp;
+        </div>
+
+        <div id="menu">
+                <ul>
+	<li class="link"><a  href="http://www.mysql.com/downloads/">MySQL Enterprise Edition</a>
+	
+		
+		
+	</li>
+	
+	<li class="link"><a  href="http://www.mysql.com/downloads/">MySQL Cluster CGE</a>
+	
+		
+		
+	</li>
+	
+	<li class="link"><a  href="/downloads/mysql/">MySQL Community Server</a>
+	
+		
+		
+	</li>
+	
+	<li class="link"><a  href="/downloads/cluster/">MySQL Cluster</a>
+	
+		
+		
+	</li>
+	
+	<li class="link"><a  href="/downloads/tools/">MySQL Workbench & Utilities</a>
+	
+		
+		
+	</li>
+	
+	<li class="link"><a  href="/downloads/mysql-proxy/">MySQL Proxy</a>
+	
+		
+		
+	</li>
+	
+	<li class="link"><a  href="/downloads/connector/">MySQL Connectors</a>
+	
+		
+		
+	</li>
+	
+	<li class="link last"><a  href="/downloads/windows/">MySQL on Windows</a>
+	
+		
+		
+	</li>
+	
+</ul>
+        </div>
+
+        <br class="clear" />
+
+        
+        
+            
+            
+            
+
+            
+            
+
+            
+            
+                                            <div></div>
+                            
+            
+            
+        
+    <!--/UdmComment-->
+    </div>
+
+      
+<!-- Main content -->
+
+<div id="page" class="sidebar" >
+
+            <h1 class="page_header" id="mainContent">Begin Your Download - mysql-workbench-community-6.0.7-1ubu1204-amd64.deb</h1>
+    
+
+
+
+
+	        <h3>Login Now or Sign Up for a free account.</h3>
+    <p>An Oracle Web Account provides you with the following advantages:</p>
+    <ul>
+        <li>Fast access to MySQL software downloads</li>
+        <li>Download technical White Papers and Presentations</li>
+        <li>Post messages in the MySQL Discussion Forums </li>
+        <li>Report and track bugs in the MySQL bug system</li>
+        <li>Comment in the MySQL Documentation</li>
+    </ul>
+            <div class="login-callout">
+    <div class="login-callout-btns">
+                <a class="big-button-blue" href="https://dev.mysql.com/auth/login/?bin=1&dest=http%3a%2f%2fdev.mysql.com%2Fdownloads%2Fmirror.php%3Fid%3D414356">
+                    Login &raquo;<br />
+            <span class="button-subtitle">using my Oracle Web account</span>
+        </a>
+        &nbsp; &nbsp;
+                <a class="big-button-green" href="https://dev.mysql.com/auth/register/?bin=1&dest=http%3a%2f%2fdev.mysql.com%2Fdownloads%2Fmirror.php%3Fid%3D414356">
+                    Sign Up &raquo;<br />
+            <span class="button-subtitle">for an Oracle Web account</span>
+        </a>
+    </div>
+        MySQL.com is using Oracle SSO for authentication. If you already have an Oracle Web account, click the Login link. Otherwise, you can signup for a free account by clicking the Sign Up link and following the instructions.
+</div>        <br /><p><b><a href="/get/Downloads/MySQLGUITools/mysql-workbench-community-6.0.7-1ubu1204-amd64.deb/from/http://cdn.mysql.com/">No thanks, just start my download.</a></b></p><br />
+
+
+
+
+</div> <!--End Container -->
+
+
+
+
+ </div> 
+</div> 
+<div id="footer">
+
+    <div class="links">
+        <ul>
+            <li class="top"><a href="http://dev.mysql.com">Developer Zone</a></li>
+	    <li><a href="http://dev.mysql.com/doc/">Documentation</a></li>
+            <li><a href="http://dev.mysql.com/articles/">Developer Articles</a></li>
+			<li><a href="http://dev.mysql.com/news-and-events/">News &amp; Events</a></li>
+            <li><a href="http://forums.mysql.com/">Forums</a></li>
+			<li><a href="http://lists.mysql.com/">Lists</a></li>
+            <li><a href="http://bugs.mysql.com/">Bugs</a></li>
+            <li><a href="http://dev.mysql.com/worklog/">Worklog</a></li>
+			            <li><a href="http://planet.mysql.com/">Planet MySQL</a></li>
+			            <li><a href="http://labs.mysql.com/">Labs</a></li>
+        </ul>
+    </div>
+
+    <div class="links">
+        <ul>
+            <li class="top"><a href="http://dev.mysql.com/downloads/">Downloads</a></li>
+            <li><a href="http://dev.mysql.com/downloads/mysql/">MySQL Community Server</a></li>
+            <li><a href="http://dev.mysql.com/downloads/mysql-proxy/">MySQL Proxy</a></li>
+            <li><a href="http://dev.mysql.com/downloads/cluster/">MySQL Cluster</a></li>
+            <li><a href="http://dev.mysql.com/downloads/workbench/">MySQL Workbench</a></li>
+            <li><a href="http://dev.mysql.com/downloads/connector/">MySQL Connectors</a></li>
+            <li><a href="http://downloads.mysql.com/archives.php">Archives</a></li>
+        </ul>
+    </div>
+
+    <div class="links">
+        <ul>
+            <li class="top"><a href="http://dev.mysql.com/doc/">Documentation</a></li>
+            <li><a href="http://dev.mysql.com/doc/">MySQL Reference Manuals</a></li>
+            <li><a href="http://dev.mysql.com/doc/index-gui.html">MySQL Workbench</a></li>
+            <li><a href="http://dev.mysql.com/doc/index-expert.html">Expert Guides</a></li>
+            <li><a href="http://dev.mysql.com/doc/index-topic.html">Topic Guides</a></li>
+            <li><a href="http://dev.mysql.com/doc/index-cluster.html">MySQL Cluster</a></li>
+            <li><a href="http://dev.mysql.com/doc/index-other.html">Other Documents</a></li>
+            <li><a href="http://dev.mysql.com/doc/index-about.html">About</a></li>
+            <li><a href="http://dev.mysql.com/doc/index-archive.html">Archives</a></li>
+        </ul>
+    </div>
+
+
+    <div class="links">
+        <ul>
+            <li class="top"><a href="http://www.mysql.com/about/">About MySQL</a></li>
+            <li><a href="http://www.mysql.com/about/contact/">Contact Us</a></li>
+                         <li><a href="http://www.mysql.com/buy-mysql/">How to Buy</a></li>
+			<li><a href="http://www.mysql.com/partners/">Partners</a></li>
+            <li><a href="http://www.mysql.com/about/jobs/">Job Opportunities</a></li>
+            <li><a href="http://www.mysql.com/sitemap.html">Site Map</a></li>
+	            </ul>
+	</div>
+
+	<div class="links">
+		<ul>
+			<li class="top"><a href="http://www.mysql.com/about/legal/">Legal</a></li>
+			<li><a href="http://www.mysql.com/about/legal/">Legal Policies</a></li>
+			<li><a href="http://www.oracle.com/us/legal/privacy/index.htm">Your Privacy Rights</a></li>
+			<li><a href="http://www.oracle.com/us/legal/terms/index.html">Terms of Use</a></li>
+			<li><a href="http://www.oracle.com/us/legal/third-party-trademarks/index.html">Trademark Policy</a></li>
+			<li><a href="http://www.oracle.com/technetwork/community/oca-486395.html">Contributor Agreement</a></li>
+		</ul>
+	</div>
+
+
+    <div id="search" class="en">
+	        <form id="footer_search" action="http://search.oracle.com/search/search" method="get">
+            <input type="text" id="f_q" name="q" value="" class="swap_value" onfocus="clearSearchText();" />
+	    <input type="hidden"  name="group" value="All"/>
+	    <input type="image" src="/common/themes/sakila/footer_search_g.png" id="f_go" alt="Search" title="Search" />
+        </form>    </div>
+
+</div><!-- End Footer -->
+		<div id="copyright-oracle"><a href="http://www.oracle.com/"><img src="/common/logos/logo-oracle-red-91x22.gif" alt="Oracle" width="91" height="22" /></a>&nbsp;&nbsp;<span>&copy; 2013, Oracle Corporation and/or its affiliates</span></div>
+
+
+<script src="/common/js/metrics/s_code_remote.js"></script>
+
+</body>
+</html>

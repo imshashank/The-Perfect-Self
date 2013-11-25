@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<style type="text/css">
+img {
+	border: 1px solid #cdcdcd;
+	padding:2px;
+	}
+</style>
+</head>
+
+<body>
+<h1><strong>SN Rating</strong> Installation Document </h1>
+<p><br />
+  <strong>Contributors</strong>: Divesh Kumar, Paritosh Gautam<br />
+  <strong>Tags</strong>: Rating, Demographic information, Rating by region, Rating by post, Rating by Page, Rating by post type<br />
+  <strong>Requires at least</strong>: 3.0<br />
+  <strong>Tested up to</strong>: 3.5</p>
+<h2>How To Install plugin?</h2>
+<ol>
+  <li>Upload the folder 'sn_rating' to the '/wp-content/plugins/' directory</li>
+  <li>Activate the plugin through the 'Plugins' menu in WordPress.</li>
+</ol>
+<h2>Enable Rating for Entities</h2>
+<p>This plugin can be set with different rating boxes for different entities like post / page / comments.</p>
+<p>Goto <strong>settings/Rating Settings </strong>from admin you will see the following screen:</p>
+<p><img src="screenshots/entities_list.png" alt="Entities" width="845" height="439" longdesc="screenshots/entities_list.png" /></p>
+<p>Multiple entities are listed in the list shown in the screenshot above. If you want to enable the rating for post then tick the <strong>Enable </strong> checkbox and click on save changes.</p>
+<p>Changes will reflect on the post detail and blog listing page as shown in the screenshots below:</p>
+<p><img src="screenshots/post_rating_shown.png" alt="Single Post Page" width="634" height="401" longdesc="screenshots/post_rating_shown.png" /> </p>
+<p><img src="screenshots/blog_list_page.png" alt="Blog List Page" width="504" height="482" longdesc="screenshots/blog_list_page.png" /></p>
+<h2>Different Rating Images/themes</h2>
+<p>You may assign a differnt rating box for every entity type by going to<strong> Settings/Rating Settings </strong>and click on the link highlighted in the screenshot below:</p>
+<p><img src="screenshots/edit_theme_link.png" alt="Edit Theme Link" width="845" height="439" longdesc="screenshots/edit_theme_link.png" /></p>
+<p>When you click on this link it will open a popup window as shown below:</p>
+<p><img src="screenshots/assign_theme_box.png" alt="Assign Theme " width="498" height="223" longdesc="screenshots/assign_theme_box.png" /> </p>
+<p>Select rating theme/images for post/pages/comments etc, and save changes.</p>
+<p>You may also provide your custom images as well. Goto plugins/sn_rating/images/themes/YOUR_DIRECTORY and put <strong>active.png (</strong>for active image) and <strong>non_active.png </strong>(for non-active image). Your custom images will start showing in the list of different rating scale images.  </p>
+<h2>Multiset Rating Parameters </h2>
+<p>Multiset Rating Parameters can be created for rating boxes as well where user can rate the content based on different parameters like efficiency, cost, valuable etc. </p>
+<p>To create Rating Parameter in admin panel goto <strong>Settings/Rating Settings </strong>and click on <strong>Rating Parameters </strong> tab:</p>
+<p><img src="screenshots/factors_list.png" alt="Factors Page" width="549" height="222" longdesc="screenshots/factors_list.png" /> </p>
+<p>Existing Factors are listed down in a table format where you can <strong>Edit </strong>and<strong> Delete. </strong>To create a new Rating Factor under <strong>Add Rating Parameter </strong>field provide the label for factor and click on save changes which will save the record and refelection will update the table with new factor.</p>
+<h2>Assign Factors with entity</h2>
+<p>Once factors are created they need to be attached with an entity to make them visible. To assign factors with entities again goto <strong>Settings/Rating Settings</strong> and on <strong>General Tab </strong>in the list of entities click on <strong>Assign Rating Parameters.</strong></p>
+<p><strong><img src="screenshots/assign_rating.png" alt="Assign Rating Parameters" width="845" height="439" longdesc="screenshots/assign_rating.png" /></strong></p>
+<p>This will open a popup like in the screenshot below:</p>
+<p><img src="screenshots/assign_rating_factors.png" alt="Assign Rating Factors" width="496" height="221" longdesc="screenshots/assign_rating_factors.png" /> </p>
+<p>Select <strong>Rating Parameters</strong> you want to attach with the current entity and click on save changes. See the screenshot below for post page visibility of multiset factors.</p>
+<p><img src="screenshots/multiple_rating_factors_box.png" alt="Multiset Factors" width="422" height="139" longdesc="screenshots/multiple_rating_factors_box.png" /> </p>
+<h2>Most Rated Content Flag</h2>
+<p>Goto<strong> Settings/Rating Settings </strong>and on <strong>General Tab </strong>select the and tick the<strong> Enable Most Rated Flag.</strong> This will make content as <strong>Most Rated Content</strong> and this will be shown in the content as shown below:</p>
+<p><img src="screenshots/most_rated.png" alt="Most Rated" width="642" height="206" longdesc="screenshots/most_rated.png" /> </p>
+<h2>Advanced Options</h2>
+<p>On <strong>Settings/Rating Settings </strong>there is a tab for <strong>Advanced Tab.</strong></p>
+<p><strong><img src="screenshots/advanced_tab.png" alt="Advanced Tab" width="690" height="441" longdesc="screenshots/advanced_tab.png" /></strong></p>
+<ul>
+  <li><strong>Select Theme: </strong>This option selects default theme for all entities.</li>
+  <li><strong>Rating Scale: </strong> Number of stars in rating box.</li>
+  <li><strong>Demographic Mode: </strong>If you want to show <strong>Region details</strong> for rating this mode has to be on and you need to place a widget <strong>Rating Details (Default).</strong></li>
+  <li><strong>Share Feature: </strong>This will enable the share buttons for <strong>Facebook </strong>and <strong>Twitter </strong> on the post and page content.</li>
+  <li><strong>Share Text: </strong>This text will append in the post description while you share it on <strong>Facebook </strong>and <strong>Twitter. </strong>You may write any text however need to attach <strong>'%d' </strong> to place where you want to show average rating of the content.</li>
+</ul>
+<h2>Demographic Mode:</h2>
+<p>Demographic mode shows the details of <strong>top 10</strong> regions where rating was provided, which is through the widget.</p>
+<p><strong>Rating Widget (No Multi Factor)</strong></p>
+<p><strong><img src="screenshots/rating_widget_single.png" alt="Rating Widget No Multiple Factors" width="273" height="321" longdesc="screenshots/rating_widget_single.png" /></strong></p>
+<p><strong>Rating Widget (Multi Factors)</strong></p>
+<p><strong><img src="screenshots/rating_widget_multiple.png" alt="Rating Widget Multiple Factors" width="233" height="155" longdesc="screenshots/rating_widget_multiple.png" /></strong></p>
+<p><strong>Share Buttons</strong></p>
+<p><strong><img src="screenshots/share_Text.png" alt="Share Buttons" width="427" height="245" longdesc="screenshots/share_Text.png" /></strong></p>
+<h2>Enabling Demographic Mode Feature:</h2>
+<p>Demographic mode checkbox by default is disabled, To enable DemoGraphic Mode please download <b><a href='http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz'>Gzip File</a></b> and extract this in plugins/sn_rating directory. </p>
+<p><strong>Download and Extract Gzip File (GeoLiteCity1.dat)</strong></p>
+<p><strong><img src="screenshots/demographic-step-1.png" alt="Download Gzip" longdesc="screenshots/demographic-step-1.png" /></strong></p>
+<p><strong><img src="screenshots/demographic-step-2.png" alt="Extract Gzip" longdesc="screenshots/demographic-step-2.png" /></strong></p>
+<p><strong><img src="screenshots/demographic-step-3.png" alt="Delete zip" longdesc="screenshots/demographic-step-3.png" /></strong></p>
+<p><strong>Check mark Demographic mode for Demographic feature to enable</strong></p>
+<p><strong><img src="screenshots/demographic-step-4.png" alt="Enable Demographic Mode" longdesc="screenshots/demographic-step-4.png" /></strong></p>
+<p><strong>Rating Scale configuration</strong></p>
+<p><strong><img src="screenshots/screenshot-15.png" alt="Rating Scale configuration" longdesc="screenshots/screenshot-15.png" /></strong></p>
+<p><strong>Analytics Page for rating information</strong></p>
+<p><strong><img src="screenshots/screenshot-16.png" alt="Rating Analytics" longdesc="screenshots/screenshot-16.png" /></strong></p>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+
+
+</body>
+</html>
