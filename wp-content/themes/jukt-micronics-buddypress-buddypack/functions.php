@@ -11,4 +11,16 @@ function my_nav_menu_profile_link($menu) {
                 return $menu;
 }
 
+add_theme_support( 'post-thumbnails' ); 
+set_post_thumbnail_size( 100, 50, true );  
+
+if ( function_exists('register_sidebar') ){
+    register_sidebar(array(
+        'name' => 'my_mega_menu',
+        'before_widget' => '<div id="my-mega-menu-widget">',
+        'after_widget' => '</div>',
+        'before_title' => '',
+        'after_title' => '',
+));
+}
 ?>

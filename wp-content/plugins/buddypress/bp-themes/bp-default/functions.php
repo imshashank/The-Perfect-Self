@@ -438,6 +438,14 @@ function bp_dtheme_widgets_init() {
 		'before_title' => '<h3 class="widgettitle">',
 		'after_title' => '</h3>',
 	) );
+	 register_sidebar(array(
+        'name' => 'my_mega_menu',
+        'before_widget' => '<div id="my-mega-menu-widget">',
+        'after_widget' => '</div>',
+        'before_title' => '',
+        'after_title' => '',
+	));
+
 }
 add_action( 'widgets_init', 'bp_dtheme_widgets_init' );
 endif;
@@ -800,5 +808,35 @@ function modify_contact_methods($profile_fields) {
 	return $profile_fields;
 }
 add_filter('user_contactmethods', 'modify_contact_methods');
+
+
+
+function bp_reg_captcha() {
+  global $bp;
+  if( function_exists( 'cptch_display_captcha_custom' ) ) {
+	echo '<div class="register-section" style="float:left; width:48%;">';
+	echo '<label>Human Verification (required)</label>';
+	if (!empty($bp->signup->errors['captcha_response_field'])) {
+	  echo '<div class="error">';
+	  echo "Please complete the verification.";
+	  echo '</div>';
+	}
+	echo "<input type='hidden' name='cntctfrm_contact_action' value='true' />";
+	echo cptch_display_captcha_custom();
+	echo '</div>';
+  }
+}
+
+function bp_reg_captcha_validate($errors) {
+	global $bp;
+	if(function_exists( 'cptch_check_custom_form' ) && cptch_check_custom_form() !== true ) {
+	  $bp->signup->errors['captcha_response_field'] = "Error.";
+	}
+	return;
+}
+
+add_action( 'bp_before_registration_submit_buttons', 'bp_reg_captcha' );
+add_action( 'bp_signup_validate', 'bp_reg_captcha_validate' );
+
 
 ?>

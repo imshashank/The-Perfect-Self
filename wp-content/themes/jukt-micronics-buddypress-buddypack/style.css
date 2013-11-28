@@ -1,16 +1,15 @@
 /*
-Theme Name: Jukt Micronics (BuddyPress BuddyPack)
-Theme URI: http://www.avenueb2.com
-Description: A theme from the Avenue BuddyPress BuddyPack (B2)
-Version: 1.2
-Author: Michael Kuhlmann
-Author URI: http://www.michaelkuhlmann.com
+Theme Name: The perfect Selg
+Theme URI: http://theperfectself.com
+Description: Helping you create your perfect self
+Version: 1.0
+Author: Shashank Agarwal
+Author URI: http://shashank.pw
 Template: bp-default
 Tags: buddypress, red, white, flexible-width, two-columns
 */
 
 @import url(../../plugins/buddypress/bp-themes/bp-default/_inc/css/reset.css );
-
 
 
 /*Mine*/
@@ -182,7 +181,7 @@ ul#nav {
 		margin: 0;
 	}
 		ul#nav li a {
-			color: #333;
+
 			text-decoration: none;
 			padding: 5px 15px;
 			border-bottom: 4px solid white;

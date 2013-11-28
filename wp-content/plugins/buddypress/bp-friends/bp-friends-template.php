@@ -66,7 +66,7 @@ function bp_friends_random_friends() {
 	} ?>
 
 	<div class="info-group">
-		<h4><?php bp_word_or_name( __( "My Friends", 'buddypress' ), __( "%s's Friends", 'buddypress' ) ) ?>  (<?php echo BP_Friends_Friendship::total_friend_count( bp_displayed_user_id() ) ?>) <span><a href="<?php echo trailingslashit( bp_displayed_user_domain() . bp_get_friends_slug() ) ?>"><?php _e('See All', 'buddypress') ?></a></span></h4>
+		<h4><?php bp_word_or_name( __( "My Confidantes", 'buddypress' ), __( "%s's Friends", 'buddypress' ) ) ?>  (<?php echo BP_Friends_Friendship::total_friend_count( bp_displayed_user_id() ) ?>) <span><a href="<?php echo trailingslashit( bp_displayed_user_domain() . bp_get_friends_slug() ) ?>"><?php _e('See All', 'buddypress') ?></a></span></h4>
 
 		<?php if ( $friend_ids ) { ?>
 
@@ -86,7 +86,7 @@ function bp_friends_random_friends() {
 		<?php } else { ?>
 
 			<div id="message" class="info">
-				<p><?php bp_word_or_name( __( "You haven't added any friend connections yet.", 'buddypress' ), __( "%s hasn't created any friend connections yet.", 'buddypress' ) ) ?></p>
+				<p><?php bp_word_or_name( __( "You haven't added confidante connections yet.", 'buddypress' ), __( "%s hasn't created any confidante connections yet.", 'buddypress' ) ) ?></p>
 			</div>
 
 		<?php } ?>
@@ -166,7 +166,7 @@ function bp_friends_random_members( $total_members = 5 ) {
 function bp_friend_search_form() {
 
 	$action = bp_displayed_user_domain() . bp_get_friends_slug() . '/my-friends/search/';
-	$label  = __( 'Filter Friends', 'buddypress' ); ?>
+	$label  = __( 'Filter Confidantes', 'buddypress' ); ?>
 
 		<form action="<?php echo $action ?>" id="friend-search-form" method="post">
 
@@ -282,8 +282,8 @@ function bp_add_friend_button( $potential_friend_id = 0, $friend_status = false 
 					'wrapper_class'     => 'friendship-button pending_friend',
 					'wrapper_id'        => 'friendship-button-' . $potential_friend_id,
 					'link_href'         => wp_nonce_url( bp_loggedin_user_domain() . bp_get_friends_slug() . '/requests/cancel/' . $potential_friend_id . '/', 'friends_withdraw_friendship' ),
-					'link_text'         => __( 'Cancel Friendship Request', 'buddypress' ),
-					'link_title'        => __( 'Cancel Friendship Requested', 'buddypress' ),
+					'link_text'         => __( 'Cancel Confidante Request', 'buddypress' ),
+					'link_title'        => __( 'Cancel Confidante Requested', 'buddypress' ),
 					'link_id'			=> 'friend-' . $potential_friend_id,
 					'link_rel'			=> 'remove',
 					'link_class'        => 'friendship-button pending_friend requested'
@@ -299,8 +299,8 @@ function bp_add_friend_button( $potential_friend_id = 0, $friend_status = false 
 					'wrapper_class'     => 'friendship-button is_friend',
 					'wrapper_id'        => 'friendship-button-' . $potential_friend_id,
 					'link_href'         => wp_nonce_url( bp_loggedin_user_domain() . bp_get_friends_slug() . '/remove-friend/' . $potential_friend_id . '/', 'friends_remove_friend' ),
-					'link_text'         => __( 'Cancel Friendship', 'buddypress' ),
-					'link_title'        => __( 'Cancel Friendship', 'buddypress' ),
+					'link_text'         => __( 'Cancel Confidante', 'buddypress' ),
+					'link_title'        => __( 'Cancel Confidante', 'buddypress' ),
 					'link_id'           => 'friend-' . $potential_friend_id,
 					'link_rel'          => 'remove',
 					'link_class'        => 'friendship-button is_friend remove'
@@ -316,8 +316,8 @@ function bp_add_friend_button( $potential_friend_id = 0, $friend_status = false 
 					'wrapper_class'     => 'friendship-button not_friends',
 					'wrapper_id'        => 'friendship-button-' . $potential_friend_id,
 					'link_href'         => wp_nonce_url( bp_loggedin_user_domain() . bp_get_friends_slug() . '/add-friend/' . $potential_friend_id . '/', 'friends_add_friend' ),
-					'link_text'         => __( 'Add Friend', 'buddypress' ),
-					'link_title'        => __( 'Add Friend', 'buddypress' ),
+					'link_text'         => __( 'Add Confidante', 'buddypress' ),
+					'link_title'        => __( 'Add Confidante', 'buddypress' ),
 					'link_id'           => 'friend-' . $potential_friend_id,
 					'link_rel'          => 'add',
 					'link_class'        => 'friendship-button not_friends add'

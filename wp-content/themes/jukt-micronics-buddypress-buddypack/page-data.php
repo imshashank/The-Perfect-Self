@@ -50,6 +50,11 @@ $array = array(
     0 => $check
 );
 
+$tags = array(
+    0 => $name,
+    1 => 'student'
+);
+
 
 $author_query = array('posts_per_page' => '-1','cat'=> $check ,'post_status' => array( 'publish','draft' ),'author' => $current_user->ID);
 $author_posts = new WP_Query($author_query);
@@ -61,6 +66,7 @@ $new_post = array(
 'post_title' => $name." Definition",
 'post_content' => 'Please enter a definition for '.$name ,
 'post_status' => 'draft',
+'tags_input'     => $tags,
 'post_date' => date('Y-m-d H:i:s'),
 'post_author' => $user_ID,
 'post_type' => 'post',
@@ -86,6 +92,13 @@ add_post_meta( $post_id, 'level', $key_1_values );
 
 //new master-> 
 
+$tags = array(
+    0 => $name,
+    1 => 'master'
+);
+
+
+
 $yourcat= get_category($check);
 $name=$yourcat->name;
 $new_post = array(
@@ -93,6 +106,7 @@ $new_post = array(
 'post_content' => 'Please enter a story for '.$name ,
 'post_status' => 'draft',
 'post_date' => date('Y-m-d H:i:s'),
+'tags_input'     => $tags,
 'post_author' => $user_ID,
 'post_parent' => $post_id,
 'post_type' => 'post',
@@ -138,6 +152,11 @@ $array = array(
 $author_query = array('posts_per_page' => '-1','category_name'=> $doc_category ,'author' => $current_user->ID);
 $author_posts = new WP_Query($author_query);
 
+$tags = array(
+    0 => $name,
+    1 => 'student'
+);
+
 $yourcat= $doc_category;
 $name=$doc_category;
 $new_post = array(
@@ -147,7 +166,8 @@ $new_post = array(
 'post_date' => date('Y-m-d H:i:s'),
 'post_author' => $user_ID,
 'post_type' => 'post',
-'post_category' => $array
+'post_category' => $array,
+'tags_input'     => $tags,
 );    
 
 
@@ -160,6 +180,10 @@ add_post_meta( $post_id, 'type', "student" );
 //echo "new definition created for $name</br> and has level". $key_1_values;
 
 //new master-> 
+$tags = array(
+    0 => $name,
+    1 => 'student'
+);
 
 $yourcat= $doc_category;
 $new_post = array(
@@ -170,6 +194,7 @@ $new_post = array(
 'post_author' => $user_ID,
 'post_parent' => $post_id,
 'post_type' => 'post',
+'tags_input'     => $tags,
 'post_category' => $array
 );    
 
@@ -358,8 +383,61 @@ $flag=0;
 		      	    
 		          </div>
 		          </div>
-		            
+<div class="relatedposts">
+<h3>Please rate these definitions</h3>
+<?php
+
+$authors = array(
+    0 => $current_user->ID,
+    1 => $current_user->ID,
+);
+
+	$orig_post = $post;
+	global $post;
+	$tags = wp_get_post_tags($post->ID);
+	
+	if ($tags) {
+	$tag_ids = array();
+	foreach($tags as $individual_tag) $tag_ids[] = $individual_tag->term_id;
+	$args=array(
+	'tag__in' => $tag_ids,
+	'author__not_in' => $authors,
+	'post__not_in' => array($post->ID),
+	'posts_per_page'=>5, // Number of related posts to display.
+	'caller_get_posts'=>1
+	);
+	
+	$my_query = new wp_query( $args );
+
+	while( $my_query->have_posts() ) {
+	$my_query->the_post();
+	?>
+	
+	<div class="relatedthumb">
+		<a rel="external" href="<? the_permalink()?>"><?php the_post_thumbnail(array(150,100)); ?><br />
+		<?php the_title(); ?>
+		</a>
+<?php 
+$postRatingData = wp_gdsr_rating_article(get_the_ID());
+gdsr_render_stars_custom(array(
+    "max_value" => gdsr_settings_get('stars'),
+    "size" => 12,
+   'max_votes' => 1,
+    "vote" => $postRatingData->rating
+));
+?>
+	</div>
+	
+	<? }
+	}
+	$post = $orig_post;
+	wp_reset_query();
+	?>
+</div>		          
+  
 		          </div>
+
+
 		        </section>
 
 
@@ -399,14 +477,65 @@ $flag=0;
 	      	    	      </form>	
 			       	</div>
 			         </div>
+<div class="relatedposts">
+<h3>Please rate these posts</h3>
+<?php
+$authors = array(
+    0 => $current_user->ID,
+    1 => $current_user->ID,
+);
+	$orig_post = $post;
+	global $post;
+	$tags = wp_get_post_tags($post->ID);
+	
+	if ($tags) {
+	$tag_ids = array();
+	foreach($tags as $individual_tag) $tag_ids[] = $individual_tag->term_id;
+	$args=array(
+	'tag__in' => $tag_ids,
+	'post__not_in' => array($post->ID),
+	'posts_per_page'=>5, // Number of related posts to display.
+	'author__not_in' => $authors,
+	'caller_get_posts'=>1
+	);
+	
+	$my_query = new wp_query( $args );
+
+	while( $my_query->have_posts() ) {
+	$my_query->the_post();
+
+	?>
+	
+	<div class="relatedthumb">
+		<a rel="external" href="<? the_permalink()?>"><?php the_post_thumbnail(array(150,100)); ?><br />
+		<?php the_title(); ?>
+		</a>
+<?php 
+$postRatingData = wp_gdsr_rating_article(get_the_ID());
+gdsr_render_stars_custom(array(
+    "max_value" => gdsr_settings_get('stars'),
+    "size" => 12,
+   'max_votes' => 1,
+    "vote" => $postRatingData->rating
+));
+?>
+	</div>
+	
+	<? }
+	}
+	$post = $orig_post;
+	wp_reset_query();
+	?>		 
 		         
 		         </div>
 		       </section>
 		      
 		      </div>
-		      
-		      <p></p>
+
+	
 		    </div>
+
+
 		  </section>
 
           

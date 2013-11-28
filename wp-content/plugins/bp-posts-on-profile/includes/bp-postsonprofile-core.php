@@ -17,6 +17,10 @@ elseif ( file_exists( dirname( __FILE__ ) . '/languages/bp-postsonprofile-' . ge
  */
 function bp_postsonprofile_setup_globals() {
 	global $bp, $wpdb;
+if ( !isset( $bp->postsonprofile ) || !is_object( $bp->postsonprofile ) ) {
+$bp->postsonprofile = new stdClass;
+}
+
 
 	/* For internal identification */
 	$bp->postsonprofile->id = 'postsonprofile';
@@ -48,7 +52,7 @@ function bp_postsonprofile_setup_nav() {
     $postsonprofile_link = $bp->loggedin_user->domain . $bp->postsonprofile->slug . '/';
 
 	bp_core_new_nav_item( array(
-		'name' => sprintf(__( 'Posts <span>(%d)</span>', 'bp-postsonprofile' ), $post_count),
+		'name' => sprintf(__( 'Exercises <span>(%d)</span>', 'bp-postsonprofile' ), $post_count),
 		'slug' => $bp->postsonprofile->slug,
 		'position' => 80,
 		'screen_function' => 'bp_postsonprofile_screen_one',
