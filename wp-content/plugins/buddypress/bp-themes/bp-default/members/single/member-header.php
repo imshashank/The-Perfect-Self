@@ -61,7 +61,11 @@
 		 ?>
 
 	</div><!-- #item-meta -->
-
+<img src="http://server17.ies.cse.ohio-state.edu/test/TPS/ksg.png" style="
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+">
 </div><!-- #item-header-content -->
 <?php do_action( 'bp_after_member_header' ); ?>
 
