@@ -32,7 +32,8 @@ jQuery(function($) {
 
 </script>
 	<div id="content">
-		<div class="padder">
+
+	<div class="padder">
 
 		<?php do_action( 'bp_before_blog_page' ); ?>
 
@@ -251,8 +252,22 @@ $c=0;
 $count=0;
 
 
-echo '<a href="#" class=" small button success round" id="myModalButton" data-reveal-id="myModal">Add a Property</a>';
-?> <span data-tooltip class="has-tip" title="In your own words write what is (property name) from you to other people.">Student?</span>
+echo '<a href="#" class=" small button success round" id="myModalButton" data-reveal-id="myModal">Add a Property</a>
+
+<div class = "row">
+<div class="large-12 columns"> <span data-tooltip class="has-tip" title="In your own words write what is (property name) from you to other people.">Student(Know)?</span>
+
+<span data-tooltip class="has-tip" title="Write a story of your own experience of when you showed what you know to another person.  Write a story using who, what, where, why and how you demonatrated your property to other people.  Be sure to include how you know the property was received by the intended recipient.">Master(Show)?</span>
+
+ <span data-tooltip class="has-tip" title="Write your new know">Doctor(Grow)?</span>
+</div>
+</div> 
+	
+';
+?> 
+
+
+
 
 <div id="myModal" class="reveal-modal open" style="margin-top: -97px; display: none; -webkit-transform-origin: 0px 0px; opacity: 1; -webkit-transform: scale(1, 1); visibility: visible; top: 100px;">
 
