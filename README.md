@@ -9,4 +9,4 @@ Buddypress
 mysql + php + javascript
 
 By
-Shashank Agarwal
+[Shashank Agarwal](https://www.linkedin.com/in/shashankagarwal2/)
